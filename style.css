@@ -1,7 +1,12 @@
+* {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   text-align: center;
 }
-body .container-body {
+body .full-screen {
   position: fixed;
   left: 0;
   right: 0;
@@ -11,6 +16,15 @@ body .container-body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+body .splash-screen {
+  z-index: 9999999;
+  background-color: #fff;
+  color: #54cccc;
+  font-size: 40px;
+  animation: splash 1s ease-in forwards;
+}
+body .container-body {
   background: #54cccc;
   background: -moz-linear-gradient(top, #54cccc 0%, #0087db 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #54cccc), color-stop(100%, #0087db));
@@ -19,6 +33,13 @@ body .container-body {
   background: -ms-linear-gradient(top, #54cccc 0%, #0087db 100%);
   background: linear-gradient(to bottom, #54cccc 0%, #0087db 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#54cccc", endColorstr="#0087db", GradientType=0 );
+}
+body .container-body .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: load 1s ease-out forwards;
 }
 body .perfil-img {
   width: 206px;
@@ -74,9 +95,23 @@ body .projects ul li > a {
   text-decoration: none;
 }
 
-* {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+@keyframes splash {
+  to {
+    font-size: 9000px;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+}
+@keyframes load {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
