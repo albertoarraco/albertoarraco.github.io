@@ -59,6 +59,20 @@ body .social-block .social-link {
 body .social-block .social-link svg {
   fill: #fff;
 }
+body .projects h3 {
+  text-align: center;
+}
+body .projects ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+body .projects ul li > a {
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
 
 * {
   color: #fff;
