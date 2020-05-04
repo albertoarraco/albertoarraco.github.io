@@ -1,17 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+import DevTools from './containers/DevTools';/*
+import styled from 'styled-components';
+import * as Sentry from '@sentry/browser';*/
+import {version} from '../package.json';
+import App from "./components/app";
+import Router from "./containers/router";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const store = configureStore();
+
+const rootElement = document.getElementById("root");
+const develop = process.env.NODE_ENV === 'development';
+/*
+if(develop) {
+	Sentry.init({ dsn: 'https://f6d8c2af783442e684cf790e4d0336e5@sentry.io/1356081' });
+} else {
+	try {
+		Sentry.init({
+			dsn: "https://5cbaa9ff917b407e908648eda215e8f8@sentry.io/1401798",
+			release: "v" + version
+		});
+	} catch(e) {
+		Sentry.captureException(e);
+	}
+}*/
+
+render(
+		<Provider store={store}>
+			<Router/>
+			{develop && <DevTools />}
+		</Provider>,
+		rootElement
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
