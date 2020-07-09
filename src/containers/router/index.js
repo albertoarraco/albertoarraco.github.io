@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Switch,
 	Route,
 	Link
@@ -8,14 +8,14 @@ import {
 import HomeApp from "../home";
 import SpringAnimation from "../spring-animations";
 
-export default class Router extends Component {
+export default class RouterComponent extends Component {
 	render() {
 		return  (<Router>
 			<Switch>
-				<Route path="/spring-animation/test">
+				<Route exact path="/spring-animation/parallax-effect">
 					<SpringAnimation />
 				</Route>
-				<Route path="/">
+				<Route path="/home">
 					<HomeApp />
 				</Route>
 			</Switch>

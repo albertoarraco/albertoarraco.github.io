@@ -2,12 +2,15 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
-import DevTools from './containers/DevTools';/*
+import DevTools from './containers/DevTools';
+import RouterComponent from "./containers/router";
+
+/*
 import styled from 'styled-components';
-import * as Sentry from '@sentry/browser';*/
+import * as Sentry from '@sentry/browser';
 import {version} from '../package.json';
 import App from "./components/app";
-import Router from "./containers/router";
+*/
 
 const store = configureStore();
 
@@ -29,7 +32,7 @@ if(develop) {
 
 render(
 		<Provider store={store}>
-			<Router/>
+			<RouterComponent/>
 			{develop && <DevTools />}
 		</Provider>,
 		rootElement
