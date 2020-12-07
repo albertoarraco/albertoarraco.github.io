@@ -33,7 +33,7 @@ if(develop) {
 render(
 		<Provider store={store}>
 			<RouterComponent/>
-			{develop && <DevTools />}
+			{develop && false && <DevTools />}
 		</Provider>,
 		rootElement
 );

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99dde7e6-5cda-4bce-aa94-1c89c43a1967" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/first-tests/MenuItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/first-tests/MenuToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/first-tests/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/first-tests/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/first-tests/use-dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/framer-motion/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/spring-animations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/spring-animations/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +99,8 @@
       <updated>1588239801176</updated>
       <workItem from="1588239806525" duration="6385000" />
       <workItem from="1588926889573" duration="142000" />
-      <workItem from="1594291029581" duration="190000" />
+      <workItem from="1594291029581" duration="3194000" />
+      <workItem from="1607178069089" duration="599000" />
     </task>
     <servers />
   </component>
@@ -107,25 +111,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="917" height="274" key="GridCell.Tab.0.bottom" timestamp="1588667055070">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="184" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607181391722">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="917" height="274" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1588667055070" />
-    <state width="917" height="274" key="GridCell.Tab.0.center" timestamp="1588667055069">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="917" height="274" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1588667055069" />
-    <state width="917" height="274" key="GridCell.Tab.0.left" timestamp="1588667055068">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="917" height="274" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1588667055068" />
-    <state width="917" height="274" key="GridCell.Tab.0.right" timestamp="1588667055069">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="917" height="274" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1588667055069" />
-    <state x="1111" y="310" width="659" height="482" key="find.popup" timestamp="1588241631403">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="1111" y="310" width="659" height="482" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1588241631403" />
+    <state x="184" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875@0.25.1440.875" timestamp="1607181391722" />
   </component>
 </project>
